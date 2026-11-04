@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roundabout Preview</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h1>Roundabout Preview</h1>
+    <canvas id="c" width="800" height="600"></canvas>
+    <div class="panel">
+      <label>Traffic <span id="rv">1.0</span>/s
+        <input id="rate" type="range" min="0.2" max="3" step="0.1" value="1"></label>
+      <label>Speed <span id="sv">90</span>
+        <input id="speed" type="range" min="40" max="200" step="10" value="90"></label>
+      <button id="pause">Pause</button>
+      <button id="clear">Clear</button>
+      <div class="stat">On road: <b id="on">0</b> · Passed: <b id="done">0</b></div>
+    </div>
+  </main>
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/simulation.js"></script>
+  <script src="js/renderer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
